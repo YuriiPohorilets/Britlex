@@ -1,0 +1,44 @@
+/* 
+===== Breakpoints =====
+xsmall = 320;
+small = 575;
+medium = 767;
+large = 992;
+xlarge = 1600;
+========================
+*/
+
+@mixin xsmall {
+  @media screen and (min-width: 320px) {
+    @content;
+  }
+}
+
+@mixin small {
+  @media screen and (min-width: 575px) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media screen and (min-width: 767px) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media screen and (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin xlarge {
+  @media screen and (min-width: 1600px) {
+    @content;
+  }
+}
+
+// calculate line-height
+@mixin line-h($font-size, $line-height) {
+  line-height: calc($line-height / $font-size);
+}

@@ -1,0 +1,44 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: getColor(primary);
+  background-color: getColor(active-white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section {
+  padding: 50px 0;
+}
+
+// Placeholders
+%list {
+  list-style: none;
+}
+
+%link {
+  text-decoration: none;
+  color: currentColor;
+}

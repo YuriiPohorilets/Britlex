@@ -1,0 +1,16 @@
+$colors: (
+  'accent': #263238,
+  'primary': #8f95a5,
+  'secondary': #000000,
+
+  'active-white': #ffffff,
+  'contrast': #546269,
+  'background': #f5f5f5,
+  'logo': #939393,
+  'menu': #39515e,
+  'line': #c4c4c4,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}

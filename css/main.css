@@ -1,8 +1,43 @@
-.test {
-  width: 100px;
-  height: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  fill: red;
+/* 
+===== Breakpoints =====
+xsmall = 320;
+small = 575;
+medium = 767;
+large = 992;
+xlarge = 1600;
+========================
+*/
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #8f95a5;
+  background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section {
+  padding: 50px 0;
 }/*# sourceMappingURL=main.css.map */
