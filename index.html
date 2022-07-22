@@ -27,13 +27,37 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="header">
+    <header class="header" id="home">
       <div class="header__container container">
         <a class="logo" href="#">Brit<span class="logo__part">lex</span></a>
 
-        <div class="burger">
-          <div class="bugrer__item">test</div>
+        <div class="burger" data-menu-button>
+          <div class="burger__item"></div>
         </div>
+
+        <nav class="nav" data-menu>
+          <ul class="nav__list nav__list--group">
+            <li class="nav__item">
+              <a class="nav__link nav__link--active" href="#home">Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#skills">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#about">About Us</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#contact">Contacts</a>
+            </li>
+          </ul>
+
+          <button class="nav__btn btn" type="button">Let`s Talk</button>
+        </nav>
+
+        <div class="overlay"></div>
       </div>
     </header>
 
@@ -61,7 +85,7 @@
       </section>
 
       <!-- Skills section -->
-      <section class="skills section">
+      <section class="skills section" id="skills">
         <div class="skills__container container">
           <h2 class="title">Skills</h2>
           <ul class="skills__list">
@@ -139,7 +163,7 @@
       </section>
 
       <!-- About us section -->
-      <section class="about section">
+      <section class="about section" id="about">
         <div class="about__container container">
           <h2 class="title">About Us</h2>
           <img
@@ -179,7 +203,7 @@
       </section>
 
       <!-- Pricing section -->
-      <section class="pricing">
+      <section class="pricing" id="pricing">
         <div class="pricing__container container">
           <h2 class="title">Pricing</h2>
           <ul class="pricing__list">
@@ -243,7 +267,7 @@
       </section>
 
       <!-- Contact us section -->
-      <section class="contact section">
+      <section class="contact section" id="contact">
         <div class="contact__container container">
           <h2 class="title">Contact Us</h2>
           <img

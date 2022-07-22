@@ -7,10 +7,21 @@ $colors: (
   'contrast': #546269,
   'background': #f5f5f5,
   'logo': #939393,
-  'menu': #39515e,
+  'burger': #39515e,
   'line': #c4c4c4,
+
+  'overlay': rgba(7, 34, 47, 0.7),
+);
+
+$properties: (
+  'time': 350ms,
+  'fn': ease-in-out,
 );
 
 @function getColor($key) {
   @return map-get($colors, $key);
+}
+
+@function getProperty($key) {
+  @return map-get($properties, $key);
 }

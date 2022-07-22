@@ -39,6 +39,6 @@ xlarge = 1600;
 }
 
 // calculate line-height
-@mixin line-h($font-size, $line-height) {
+@mixin lh($font-size, $line-height) {
   line-height: calc($line-height / $font-size);
 }
