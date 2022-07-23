@@ -1,6 +1,5 @@
 .header {
   padding: 5px 0;
-  overflow: hidden;
 }
 
 .header__container {
@@ -18,6 +17,20 @@
   font-size: 24px;
   @include lh(24px, 36px);
   color: getColor(secondary);
+
+  @include l {
+    margin-right: 167px;
+
+    font-size: 30px;
+    @include lh(30px, 45px);
+  }
+
+  @include xl {
+    margin-right: 253px;
+
+    font-size: 36px;
+    @include lh(36px, 54px);
+  }
 }
 
 .logo__part {
@@ -64,6 +77,10 @@
 
     border-radius: 1px;
     transition: transform getProperty(time) getProperty(fn);
+  }
+
+  @include l {
+    display: none;
   }
 }
 
@@ -127,6 +144,22 @@ body.menu-is-open .burger::after {
     height: 1px;
     background-color: getColor(line);
   }
+
+  @include l {
+    position: static;
+
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    background-color: transparent;
+
+    transform: translate(0);
+
+    &::before {
+      display: none;
+    }
+  }
 }
 
 body.menu-is-open .nav {
@@ -138,6 +171,13 @@ body.menu-is-open .nav {
 
   margin-top: 48px;
   margin-bottom: 16px;
+
+  @include l {
+    display: flex;
+    align-items: center;
+
+    margin: 0;
+  }
 }
 
 .nav__item {
@@ -145,6 +185,28 @@ body.menu-is-open .nav {
   font-size: 22px;
   @include lh(22px, 65px);
   color: getColor(accent);
+
+  @include l {
+    margin-right: 30px;
+
+    font-size: 16px;
+    @include lh(16px, 24px);
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  @include xl {
+    margin-right: 40px;
+
+    font-size: 20px;
+    @include lh(20px, 30px);
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 .nav__link {
@@ -152,5 +214,5 @@ body.menu-is-open .nav {
 }
 
 .nav__btn {
-  @extend %btn;
+  @extend %btn--header;
 }

@@ -5,7 +5,7 @@ const menuNav = document.querySelector(".nav__list--group");
 
 menuBttns.forEach((el) => el.addEventListener("click", toggleMenuVisibility));
 // menuOverlay.addEventListener("click", toggleMenuVisibility);
-menuNav.addEventListener("click", toggleMenuVisibility);
+menuNav.addEventListener("click", remoteClass);
 
 function toggleMenuVisibility() {
   const expanded = document.body.classList.contains("menu-is-open");
@@ -19,4 +19,8 @@ function toggleMenuVisibility() {
 
 function onKeyDown(event) {
   event.code === "Escape" ? toggleMenuVisibility() : null;
+}
+
+function remoteClass() {
+  document.body.classList.remove("menu-is-open");
 }

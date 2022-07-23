@@ -1,0 +1,68 @@
+.hero__container {
+  text-align: center;
+
+  @include m {
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+}
+
+.hero__img {
+  margin-bottom: 16px;
+
+  @include m {
+    order: 1;
+    margin-bottom: 0;
+  }
+}
+
+.hero__title {
+  margin-bottom: 20px;
+
+  @include s {
+    font-size: 34px;
+    @include lh(34px, 45px);
+  }
+
+  @include m {
+    font-size: 36px;
+    @include lh(36px, 45px);
+  }
+
+  @include l {
+    font-size: 48px;
+    @include lh(48px, 64px);
+  }
+
+  @include xl {
+    font-size: 64px;
+    @include lh(64px, 80px);
+  }
+}
+
+.hero__description {
+  margin-bottom: 35px;
+
+  @include lh(14px, 21px);
+
+  @include s {
+    font-size: 16px;
+    line-height: 24px;
+    @include lh(16px, 24px);
+  }
+
+  @include l {
+    font-size: 20px;
+    @include lh(20px, 30px);
+  }
+
+  @include xl {
+    font-size: 24px;
+    @include lh(24px, 36px);
+  }
+}
+
+.hero__btn {
+  @extend %btn;
+}

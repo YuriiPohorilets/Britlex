@@ -18,10 +18,22 @@ $properties: (
   'fn': ease-in-out,
 );
 
+$sizes: (
+  'xs': 320px,
+  's': 575px,
+  'm': 767px,
+  'l': 992px,
+  'xl': 1600px,
+);
+
 @function getColor($key) {
   @return map-get($colors, $key);
 }
 
 @function getProperty($key) {
   @return map-get($properties, $key);
+}
+
+@function getSize($key) {
+  @return map-get($sizes, $key);
 }
