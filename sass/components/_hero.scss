@@ -19,6 +19,7 @@
 
 .hero__title {
   margin-bottom: 20px;
+  @include lh(24px, 36px);
 
   @include s {
     font-size: 34px;
@@ -63,6 +64,6 @@
   }
 }
 
-.hero__btn {
-  @extend %btn;
-}
+// .hero__btn {
+//   @extend %btn;
+// }

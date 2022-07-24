@@ -1,0 +1,144 @@
+.skills__title {
+  text-align: center;
+}
+
+.skills__list {
+  @extend %list;
+
+  @include s {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  @include m {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+}
+
+.skills__item {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 45px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  background-color: getColor(background);
+  border-radius: 5px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include s {
+    margin: 0;
+  }
+
+  @include m {
+    &:first-child {
+      grid-row-start: 1;
+      grid-row-end: 3;
+    }
+
+    &:last-child {
+      grid-column-start: 2;
+      grid-column-end: 4;
+      display: flex;
+      flex-direction: row-reverse;
+    }
+  }
+
+  @include l {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+  @include l {
+    padding-left: 43px;
+    padding-right: 43px;
+  }
+}
+
+.skills__img {
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.skills__wrapper {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.skills__text {
+  margin-bottom: 30px;
+}
+
+.skills__subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  @include lh(18px, 80px);
+  color: getColor(accent);
+
+  @include m {
+    font-size: 20px;
+    @include lh(20px, 80px);
+  }
+
+  @include l {
+    font-size: 22px;
+    @include lh(22px, 80px);
+  }
+
+  @include xl {
+    font-size: 30px;
+    @include lh(30px, 80px);
+  }
+}
+
+.skills__desctiption {
+  font-size: 13px;
+  @include lh(13px, 20px);
+
+  @include s {
+    font-size: 12px;
+    @include lh(12px, 18px);
+  }
+
+  @include m {
+    font-size: 13px;
+    @include lh(13px, 20px);
+  }
+
+  @include l {
+    font-size: 14px;
+    @include lh(14px, 21px);
+  }
+
+  @include xl {
+    font-size: 16px;
+    @include lh(16px, 24px);
+  }
+}
+
+.skills__btn {
+  padding: 14px 43px;
+
+  font-size: 14px;
+  @include lh(14px, 21px);
+  max-width: 178px;
+
+  @include s {
+    max-width: 200px;
+  }
+
+  @include l {
+    font-size: 18px;
+    @include lh(18px, 27px);
+  }
+}

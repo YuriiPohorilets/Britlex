@@ -145,6 +145,10 @@ body.menu-is-open .burger::after {
     background-color: getColor(line);
   }
 
+  @include m {
+    width: 60vw;
+  }
+
   @include l {
     position: static;
 
