@@ -1,0 +1,153 @@
+.contact__container {
+  text-align: center;
+
+  @include m {
+    text-align: left;
+  }
+}
+
+.contact__title {
+  text-align: center;
+}
+
+.contact__box {
+  @include m {
+    display: flex;
+  }
+}
+
+.contact__img {
+  margin: 0 auto;
+  margin-bottom: 38px;
+
+  @include m {
+    margin-bottom: 0;
+    margin-right: 38px;
+  }
+}
+
+.contact__description {
+  margin-bottom: 31px;
+
+  font-size: 14px;
+  @include lh(14px, 21px);
+
+  @include s {
+    margin-bottom: 60px;
+
+    font-size: 16px;
+    @include lh(16px, 24px);
+  }
+
+  @include m {
+    margin-bottom: 26px;
+  }
+
+  @include l {
+    margin-bottom: 34px;
+  }
+
+  @include xl {
+    margin-bottom: 52px;
+
+    font-size: 20px;
+    @include lh(20px, 30px);
+  }
+}
+
+.subscribe {
+  @include s {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.subscribe__input {
+  margin-bottom: 17px;
+  padding: 16px 26px;
+
+  width: 100%;
+
+  font-size: 12px;
+  @include lh(12px, 18px);
+  color: getColor(primary);
+
+  border: 1px solid getColor(primary);
+  border-radius: 5px;
+
+  @include s {
+    margin-bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 225px;
+
+    font-size: 13px;
+    @include lh(13px, 20px);
+
+    border-radius: 10px;
+  }
+
+  @include m {
+    padding: 16px 24px;
+
+    width: 65%;
+
+    border-radius: 5px;
+  }
+
+  @include l {
+    padding: 19px 38px;
+
+    font-size: 14px;
+    @include lh(14px, 21px);
+
+    border-radius: 10px;
+  }
+
+  @include xl {
+    padding: 28px 33px;
+
+    font-size: 16px;
+    @include lh(16px, 24px);
+  }
+}
+
+.subscribe__btn {
+  @include s {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    padding: 18px 56px;
+    border-radius: 10px;
+    width: 40%;
+  }
+
+  @include m {
+    padding: 15px 40px;
+
+    width: 34%;
+
+    border-radius: 5px;
+  }
+
+  @include l {
+    padding: 18px 56px;
+
+    font-size: 16px;
+    @include lh(16px, 24px);
+
+    border-radius: 10px;
+  }
+
+  @include xl {
+    padding: 25px 82px;
+
+    font-size: 20px;
+    @include lh(20px, 30px);
+  }
+}

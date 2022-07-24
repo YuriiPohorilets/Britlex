@@ -151,6 +151,7 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 18px 95px;
+  width: 100%;
   font-weight: 500;
   font-size: 16px;
   line-height: 0.9230769231;
@@ -419,6 +420,7 @@ body.menu-is-open .nav {
 }
 
 .hero__img {
+  margin: 0 auto;
   margin-bottom: 16px;
 }
 @media screen and (min-width: 767px) {
@@ -963,6 +965,161 @@ body.menu-is-open .nav {
 @media screen and (min-width: 575px) {
   .pricing__per {
     font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+.contact__container {
+  text-align: center;
+}
+@media screen and (min-width: 767px) {
+  .contact__container {
+    text-align: left;
+  }
+}
+
+.contact__title {
+  text-align: center;
+}
+
+@media screen and (min-width: 767px) {
+  .contact__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.contact__img {
+  margin: 0 auto;
+  margin-bottom: 38px;
+}
+@media screen and (min-width: 767px) {
+  .contact__img {
+    margin-bottom: 0;
+    margin-right: 38px;
+  }
+}
+
+.contact__description {
+  margin-bottom: 31px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+@media screen and (min-width: 575px) {
+  .contact__description {
+    margin-bottom: 60px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 767px) {
+  .contact__description {
+    margin-bottom: 26px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .contact__description {
+    margin-bottom: 34px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .contact__description {
+    margin-bottom: 52px;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (min-width: 575px) {
+  .subscribe {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.subscribe__input {
+  margin-bottom: 17px;
+  padding: 16px 26px;
+  width: 100%;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #8f95a5;
+  border: 1px solid #8f95a5;
+  border-radius: 5px;
+}
+@media screen and (min-width: 575px) {
+  .subscribe__input {
+    margin-bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 225px;
+    font-size: 13px;
+    line-height: 1.5384615385;
+    border-radius: 10px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .subscribe__input {
+    padding: 16px 24px;
+    width: 65%;
+    border-radius: 5px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .subscribe__input {
+    padding: 19px 38px;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: 10px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .subscribe__input {
+    padding: 28px 33px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (min-width: 575px) {
+  .subscribe__btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 18px 56px;
+    border-radius: 10px;
+    width: 40%;
+  }
+}
+@media screen and (min-width: 767px) {
+  .subscribe__btn {
+    padding: 15px 40px;
+    width: 34%;
+    border-radius: 5px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .subscribe__btn {
+    padding: 18px 56px;
+    font-size: 16px;
+    line-height: 1.5;
+    border-radius: 10px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .subscribe__btn {
+    padding: 25px 82px;
+    font-size: 20px;
     line-height: 1.5;
   }
 }/*# sourceMappingURL=main.css.map */
