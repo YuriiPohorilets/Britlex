@@ -66,7 +66,7 @@ img {
 }
 
 .title {
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 
   font-weight: 600;
   font-size: 24px;
@@ -74,22 +74,16 @@ img {
   color: getColor(secondary);
 
   @include s {
-    margin-bottom: 34px;
-
     font-size: 30px;
     @include lh(30px, 80px);
   }
 
   @include l {
-    margin-bottom: 53px;
-
     font-size: 36px;
     @include lh(36px, 80px);
   }
 
   @include xl {
-    margin-bottom: 92px;
-
     font-size: 48px;
     @include lh(48px, 80px);
   }

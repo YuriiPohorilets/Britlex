@@ -1,0 +1,130 @@
+.about__container {
+  text-align: center;
+
+  @include m {
+    text-align: left;
+  }
+}
+
+.about__box {
+  @include m {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.about__img {
+  margin: 0 auto;
+  margin-bottom: 23px;
+
+  @include m {
+    order: 1;
+    margin: 0;
+  }
+}
+
+.about__wrapper {
+  @include m {
+    flex-basis: 46%;
+  }
+
+  @include l {
+    flex-basis: 57%;
+  }
+}
+
+.about__description {
+  margin-bottom: 23px;
+
+  font-size: 13px;
+  @include lh(13px, 20px);
+
+  @include m {
+    font-size: 14px;
+    @include lh(14px, 21px);
+  }
+
+  @include l {
+    font-size: 16px;
+    @include lh(16px, 24px);
+  }
+
+  @include xl {
+    font-size: 20px;
+    @include lh(20px, 30px);
+  }
+}
+
+.about__list {
+  @extend %list;
+
+  @include s {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @include l {
+    width: 70%;
+  }
+}
+
+.about__item {
+  margin-bottom: 23px;
+  text-align: center;
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include s {
+    margin-bottom: 0;
+  }
+}
+
+.about__score {
+  font-weight: 600;
+  font-size: 24px;
+  @include lh(24px, 40px);
+  color: getColor(accent);
+
+  @include m {
+    font-size: 22px;
+    @include lh(22px, 39px);
+  }
+
+  @include l {
+    font-size: 30px;
+    @include lh(30px, 40px);
+  }
+
+  @include xl {
+    font-size: 48px;
+    @include lh(48px, 80px);
+  }
+}
+
+.about__text {
+  font-size: 15px;
+  @include lh(15px, 22px);
+
+  @include s {
+    font-size: 14px;
+    @include lh(14px, 21px);
+  }
+
+  @include m {
+    font-size: 13px;
+    @include lh(13px, 20px);
+  }
+
+  @include l {
+    font-size: 16px;
+    @include lh(16px, 24px);
+  }
+
+  @include xl {
+    font-size: 20px;
+    @include lh(20px, 30px);
+  }
+}
