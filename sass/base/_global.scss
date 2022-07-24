@@ -104,6 +104,8 @@ img {
   border: 2px solid getColor(accent);
   border-radius: 5px;
 
+  cursor: pointer;
+
   @include l {
     margin-left: auto;
     padding: 11px 40px;
@@ -137,6 +139,8 @@ img {
   background-color: getColor(accent);
   border: none;
   border-radius: 5px;
+
+  cursor: pointer;
 
   @include s {
     font-weight: 400;
