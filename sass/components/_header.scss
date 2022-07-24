@@ -18,11 +18,13 @@
   @include lh(24px, 36px);
   color: getColor(secondary);
 
-  @include l {
-    margin-right: 167px;
-
+  @include s {
     font-size: 30px;
     @include lh(30px, 45px);
+  }
+
+  @include l {
+    margin-right: 167px;
   }
 
   @include xl {
