@@ -490,6 +490,34 @@ body.menu-is-open .nav {
   }
 }
 
+.hero__btn {
+  padding: 18px 99px;
+}
+@media screen and (min-width: 575px) {
+  .hero__btn {
+    padding: 24px 101px;
+    max-width: 305px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .hero__btn {
+    padding: 19px 67px;
+    max-width: 236px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .hero__btn {
+    padding: 22px 78px;
+    max-width: 292px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .hero__btn {
+    padding: 32px 117px;
+    max-width: 438px;
+  }
+}
+
 .skills__title {
   text-align: center;
 }
