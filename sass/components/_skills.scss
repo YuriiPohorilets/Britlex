@@ -66,6 +66,29 @@
 .skills__img {
   margin: 0 auto;
   margin-bottom: 10px;
+
+  width: 213px;
+  height: 213px;
+
+  @include s {
+    width: 182px;
+    height: 182px;
+  }
+
+  @include m {
+    min-width: 200px;
+    height: 200px;
+  }
+
+  @include l {
+    min-width: 205px;
+    height: 205px;
+  }
+
+  @include xl {
+    min-width: 293px;
+    height: 293px;
+  }
 }
 
 .skills__wrapper {

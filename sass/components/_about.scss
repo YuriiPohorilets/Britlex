@@ -18,9 +18,30 @@
   margin: 0 auto;
   margin-bottom: 23px;
 
+  width: 283px;
+  height: 283px;
+
+  @include s {
+    width: 352px;
+    height: 352px;
+  }
+
   @include m {
     order: 1;
     margin: 0;
+
+    min-width: 295px;
+    height: 295px;
+  }
+
+  @include l {
+    min-width: 336px;
+    height: 336px;
+  }
+
+  @include xl {
+    min-width: 500px;
+    height: 500px;
   }
 }
 

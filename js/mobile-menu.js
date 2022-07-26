@@ -24,3 +24,26 @@ function onKeyDown(event) {
 function remoteClass() {
   document.body.classList.remove("menu-is-open");
 }
+
+// (() => {
+//   const refs = {
+//     openMenuBtn: document.querySelector(".menu-btn"),
+//     closeMenuBtn: document.querySelector(".close-btn"),
+//     menu: document.querySelector(".mob-menu-wrap"),
+//     body: document.querySelector("body"),
+//     nav: document.querySelector(".mob-menu__list"),
+//   };
+
+//   refs.openMenuBtn.addEventListener("click", toggleMenu);
+//   refs.closeMenuBtn.addEventListener("click", toggleMenu);
+//   refs.nav.addEventListener("click", remoteClass);
+
+//   function toggleMenu() {
+//     refs.menu.classList.toggle("is-hidden");
+//     refs.body.classList.toggle("no-scroll");
+//   }
+
+//   function remoteClass() {
+//     refs.menu.classList.add("is-hidden");
+//   }
+// })();
