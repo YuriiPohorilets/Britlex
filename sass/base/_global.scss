@@ -143,6 +143,13 @@ img {
 
   cursor: pointer;
 
+  transition: background-color getProperty(time) getProperty(fn);
+
+  &:hover,
+  &:focus {
+    background-color: getColor(primary);
+  }
+
   @include s {
     font-weight: 400;
     font-size: 18px;

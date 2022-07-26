@@ -83,4 +83,11 @@
 
 .footer__link {
   @extend %link;
+
+  transition: color getProperty(time) getProperty(fn);
+
+  &:hover,
+  &:focus {
+    color: getColor(accent);
+  }
 }

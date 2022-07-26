@@ -217,8 +217,24 @@ body.menu-is-open .nav {
 
 .nav__link {
   @extend %link;
+
+  transition: color getProperty(time) getProperty(fn);
+
+  &:hover,
+  &:focus {
+    color: getColor(primary);
+  }
 }
 
 .nav__btn {
   @extend %btn--header;
+
+  transition: background-color getProperty(time) getProperty(fn),
+    color getProperty(time) getProperty(fn);
+
+  &:hover,
+  &:focus {
+    background-color: getColor(accent);
+    color: getColor(active-white);
+  }
 }
